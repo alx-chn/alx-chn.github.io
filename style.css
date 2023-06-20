@@ -7,8 +7,7 @@ body {
 
 
 .pageFrame {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #e7e7e7;
   margin-bottom: 1rem;
   /* padding: 1vw; */
   border-radius: 1vw;
@@ -40,6 +39,17 @@ img {
   left: 2%;
   transform: translate(0%, -50%);
   border: 3px solid white;
+}
+
+#name {
+  text-align: left;
+  position: absolute;
+  top: 105%;
+  left: 20%;
+  transform: translate(0%, -50%);
+  font-size: 3vw;
+  font-weight: bold;
+  color: rgb(47, 47, 47);
 }
 
 #typing {
@@ -118,32 +128,6 @@ ul:last-of-type{
   width: 98%;
   margin-left: 1%;
   margin: 0 auto;
-}
-
-#line {
-  width: max-content;
-}
-
-:root {
-  --ani-duration: 20s;
-  --ani-start-margin: 100%;
-  --ani-end-margin: -100%;
-}
-
-#line {
-  animation-name: moveleft;
-  animation-duration: var(--ani-duration);
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes moveleft{
-  from {
-      margin-left: var(--ani-start-margin);
-  }
-  to {
-      margin-left: var(--ani-end-margin);
-  }
 }
 
 section.container {
