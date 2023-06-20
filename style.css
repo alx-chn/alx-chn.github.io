@@ -1,15 +1,14 @@
 body {
-  /* background-image: url("images/bg.png");
-  background-repeat: repeat; */
-  background-color: #363232;
-  /* background-size: 50vh; */
+  background-image: url("images/bg.png");
+  background-repeat: repeat;
+  /* background-color: #363232; */
+  background-size: 50vh;
 }
 
 
 .pageFrame {
   background-color: #e7e7e7;
   margin-bottom: 1rem;
-  /* padding: 1vw; */
   border-radius: 1vw;
   border: 1px solid #c0c0c0;
   margin-left: 5vw;

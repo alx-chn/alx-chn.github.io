@@ -1,4 +1,4 @@
-    var wordList = [ "constanly learning", "always striking for the best", "a team player" ];
+var wordList = [ "constanly learning", "always striking for the best", "a team player" ];
 var currentPhrase = 0;
 var currentPhraseIndex = 0;
 
