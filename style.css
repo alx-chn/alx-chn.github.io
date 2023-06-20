@@ -55,11 +55,17 @@ img {
 #aboutMe {
   position: relative;
   padding: 1vw 2vw 1vw 2vw;
-  background-color: whitesmoke;
+  background-color: #F7F7F7;
   margin-bottom: 1rem;
   margin: 2vh;
   border-radius: 1vw;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+#aboutMe:hover {
+  transform: scale(1.01);
+  background-color: #e7e6e6;
 }
 
 .contentHead {
@@ -116,12 +122,6 @@ ul:last-of-type{
 
 #line {
   width: max-content;
-}
-
-#banner {
-  background-color: aliceblue;
-  padding: 0 0.5 rem;
-  overflow: hidden;
 }
 
 :root {
