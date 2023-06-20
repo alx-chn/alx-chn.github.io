@@ -37,8 +37,9 @@ img {
   object-fit: cover;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 2%;
+  transform: translate(0%, -50%);
+  border: 3px solid white;
 }
 
 #typing {
