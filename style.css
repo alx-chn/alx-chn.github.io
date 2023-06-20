@@ -201,7 +201,7 @@ article {
 * {
   box-sizing: border-box
 }
-.mySlides1, .mySlides2 {
+.mySlides1, .mySlides2, .mySlides3 {
   display: block
 }
 img {

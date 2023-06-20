@@ -121,8 +121,8 @@ window.onload = () => {
 
     /* slide show */
     
-    let slideIndex = [1,1];
-    let slideId = ["mySlides1", "mySlides2"]
+    let slideIndex = [1, 1, 1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
     
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
@@ -141,6 +141,7 @@ window.onload = () => {
 
     showSlides(1, 0);
     showSlides(1, 1);
+    showSlides(1, 2);
 
     const prev = document.querySelectorAll('#prev');
     prev.forEach((item) => {
