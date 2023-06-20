@@ -64,10 +64,39 @@ img {
 .contentHead {
   margin-top: 1.5vh;
   margin-bottom: 0.5vh;
+  font-weight: bold;
+}
+
+.date {
+  position: absolute;
+  right: 2%;
+}
+
+#rc {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+li:before {
+  content: "-";
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+ul:last-of-type{
+  border-bottom: none;
 }
 
 .content {
+  font-style: italic;
   margin-top: 0vh;
+  margin-bottom: -1vh;
 }
 
 /* another part */

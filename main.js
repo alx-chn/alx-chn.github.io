@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    var wordList = [ "constanly learning", "living my best life", "trying to do the best", "a team player" ];
+    var wordList = [ "constanly learning", "always striking for the best", "a team player" ];
     var currentPhrase = 0;
     var currentPhraseIndex = 0;
 
@@ -101,34 +101,22 @@ window.onload = () => {
             
     
     /* show the hidden content */
-    let card = document.getElementById('col');
-
-    card.addEventListener('click', (evt) => {
-        const content = evt.target.querySelector('div');
-        if (content.classList.contains('active')) {
-            content.classList.remove('active');
-            content.style.display = 'none';
-            content.style.borderTop = 'none';
-        } else {
-            content.classList.add('active');
-            content.style.display = 'block';
-            content.style.borderTop = '1px solid #c0c0c0';
-        }
-    });
-
-    let card3 = document.getElementById('col3');
-
-    card3.addEventListener('click', (evt) => {
-        const content = evt.target.querySelector('div');
-        if (content.classList.contains('active')) {
-            content.classList.remove('active');
-            content.style.display = 'none';
-            content.style.borderTop = 'none';
-        } else {
-            content.classList.add('active');
-            content.style.display = 'block';
-            content.style.borderTop = '1px solid #c0c0c0';
-        }
+    const col = document.querySelectorAll('#col');
+    col.forEach((item) => {
+        item.addEventListener('click', (evt) => {
+            const content = evt.target.querySelector('div');
+            if (content.id != "aboutMe"){
+                if (content.classList.contains('active')) {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                    content.style.borderTop = 'none';
+                } else {
+                    content.classList.add('active');
+                    content.style.display = 'block';
+                    content.style.borderTop = '1px solid #c0c0c0';
+                }
+            }
+        });
     });
 
     /* slide show */
@@ -168,5 +156,20 @@ window.onload = () => {
         });
     });
 
+    const rc = document.getElementById("rc");
 
+    rc.addEventListener('click', (evt) => {
+        document.getElementById(selection).style.backgroundColor = 'rgb(190, 190, 190)';
+        document.getElementById(selected).style.display = 'none';
+        selection = 'blk2';
+        selected = 'block2';
+        document.getElementById('block2').style.display = 'block';
+        for (let i = 0; i < document.getElementsByClassName('blk2').length; i++) {
+            document.getElementsByClassName('blk2')[i].style.backgroundColor = 'white';
+        }
+        const showRC = document.getElementById('relevantCoursework');
+        showRC.classList.add('active');
+        showRC.style.display = 'block';
+        showRC.style.borderTop = '1px solid #c0c0c0';
+    });
 }   
