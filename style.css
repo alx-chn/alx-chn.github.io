@@ -248,17 +248,28 @@ img {
   color: black;
 }
 
-/* @media screen and (max-width: 999px) and (min-width: 250px) {
-  .column {
-    width: 98%;
-    display: block;
-    float: left;
-    margin-left: 1%;
-    margin-right: 1%;
+@media screen and (max-width: 445px) and (min-width: 250px) {
+  .pageFrame {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content {
+    margin-top: 15px;
+  }
+
+  #aboutMe {
+    position: relative;
+  }
+
+  .date {
+    position: absolute;
+    left: 2%;
+    margin-top: 17.5px;
   }
 
 }
 
 @media screen and (min-width: 1000px) {
 
-} */
+}
