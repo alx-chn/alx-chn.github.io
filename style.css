@@ -80,6 +80,7 @@ ul {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0px;
+  margin-top: 10px;
   border-bottom: 1px solid #c0c0c0;
 }
 
@@ -87,6 +88,10 @@ li:before {
   content: "-";
   font-weight: bold;
   margin-right: 0.5em;
+}
+
+li:nth-child(even) {
+  background-color: #e8e8e8;
 }
 
 ul:last-of-type{
