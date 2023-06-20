@@ -1,0 +1,229 @@
+body {
+  /* background-image: url("images/bg.png");
+  background-repeat: repeat; */
+  background-color: #363232;
+  /* background-size: 50vh; */
+}
+
+
+.pageFrame {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  /* padding: 1vw; */
+  border-radius: 1vw;
+  border: 1px solid #c0c0c0;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 10vw;
+}
+
+.myPic {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#typing {
+  margin-left: 4%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.column {
+  width: 100%;
+}
+
+#aboutMe {
+  position: relative;
+  padding: 1vw 2vw 1vw 2vw;
+  background-color: whitesmoke;
+  margin-bottom: 1rem;
+  margin: 2vh;
+  border-radius: 1vw;
+  display: block;
+}
+
+.contentHead {
+  margin-top: 1.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.content {
+  margin-top: 0vh;
+}
+
+/* another part */
+
+.container {
+  font: 400 14px/1.8 "Lato", sans-serif;
+  width: 98%;
+  margin-left: 1%;
+  margin: 0 auto;
+}
+
+#line {
+  width: max-content;
+}
+
+#banner {
+  background-color: aliceblue;
+  padding: 0 0.5 rem;
+  overflow: hidden;
+}
+
+:root {
+  --ani-duration: 20s;
+  --ani-start-margin: 100%;
+  --ani-end-margin: -100%;
+}
+
+#line {
+  animation-name: moveleft;
+  animation-duration: var(--ani-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveleft{
+  from {
+      margin-left: var(--ani-start-margin);
+  }
+  to {
+      margin-left: var(--ani-end-margin);
+  }
+}
+
+section.container {
+  margin-top: 2rem;
+}
+
+#selector {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  text-align: center;
+  /* height: 2rem; */
+  padding: 0.7rem 1rem 0.5rem 1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-right: 1rem;
+  flex: 0 1 6rem;
+  line-height: 1;
+}
+
+article {
+  border-radius: 0 1vw 1vw 1vw;
+  margin-bottom: 2vh;
+}
+
+.blk1 {
+  background-color: white;
+}
+
+.blk2 {
+  background-color: rgb(190, 190, 190);
+}
+
+.blk3 {
+  background-color: rgb(190, 190, 190);
+}
+
+.blk4 {
+  background-color: rgb(190, 190, 190);
+}
+
+.img-icon {
+  width: 220px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.infoblock {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+* {
+  box-sizing: border-box
+}
+.mySlides1, .mySlides2 {
+  display: block
+}
+img {
+  vertical-align: middle;
+}
+
+
+/* Next & previous buttons */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  position: absolute;
+  right: 2%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+#prev:hover, #next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* @media screen and (max-width: 999px) and (min-width: 250px) {
+  .column {
+    width: 98%;
+    display: block;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+} */
